@@ -1,12 +1,13 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
-const Item = (title, stock, price, image) => {
+const Item = ({title, stock, price, image}) => {
   return (
     <div>
 
         <div>{title}</div>
         <div>   
-           {image}
+           <img src={image.url} alt="" />
         </div>
         <div>
             <strong>$ {price}</strong>
@@ -16,7 +17,7 @@ const Item = (title, stock, price, image) => {
         </div>
         <div><strong>Details</strong></div>
 
-
+        <ItemCount stock="5" initial="0"/>
     </div>
   )
 }
