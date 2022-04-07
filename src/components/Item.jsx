@@ -3,7 +3,8 @@ import ItemCount from './ItemCount'
 
 const Item = ({title, stock, price, image}) => {
   return (
-    <div>
+    <>
+    <div className='col-4 py-2'>
 
         <div>{title}</div>
         <div>   
@@ -19,6 +20,7 @@ const Item = ({title, stock, price, image}) => {
 
         <ItemCount stock="5" initial="0"/>
     </div>
+    </>
   )
 }
 
